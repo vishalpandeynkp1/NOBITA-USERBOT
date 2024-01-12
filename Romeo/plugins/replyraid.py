@@ -1,7 +1,7 @@
 from random import choice
 from pyrogram import filters, Client
 from pyrogram.types import Message
-from Romeo.helper.data import RAID, VERIFIED_USERS, GROUP
+from Romeo.helper.data import REPLY_RAID, VERIFIED_USERS, GROUP
 from Romeo import SUDO_USER
 
 ACTIVATE_RLIST = []
@@ -62,7 +62,7 @@ async def watch_raids(client: Client, message: Message):
         user = message.from_user.id
         userr = message.from_user
         mention = f"[{userr.first_name}](tg://user?id={userr.id})"
-        raid = f"{mention} {choice(RAID)}"
+        raid = f"{mention} {choice(REPLY_RAID)}"
         if int(user) in VERIFIED_USERS:
             return
         elif int(user) in SUDO_USER:
