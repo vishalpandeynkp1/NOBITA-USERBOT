@@ -1,7 +1,6 @@
 {
     "name": "𝗟𝗶𝗹𝘆 𝗨𝘀𝗲𝗿𝗯𝗼𝘁",
     "description": "An first Telegram Userbot with multi Clients for Spamming or Mass.",
-    "logo": "https://graph.org/file/9db83cb6ae0b870c34e49.jpg"
     "keywords": ["pyrogram", "userbot"],
     "repository": "https://github.com/Team-CF-Bots/Lily-Userbot",
   "stack": "container",
