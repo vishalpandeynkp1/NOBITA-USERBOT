@@ -130,9 +130,9 @@ async def emoji(client: Client, message: Message):
     args = get_text(message)
     if not args:
         if not message.reply_to_message:
-           return await ok.edit("__What am I Supposed to do with this idiot, Give me a text.__")
+           return await ok.edit("__ᴡʜᴀᴛ ᴀᴍ ɪ sᴜᴘᴘᴏsᴇᴅ ᴛᴏ ᴅᴏ ᴡɪᴛʜ ᴛʜɪs ɪᴅɪᴏᴛ, ɢɪᴠᴇ ᴍᴇ ᴀ ᴛᴇxᴛ.__")
         if not message.reply_to_message.text:
-           return await ok.edit("__What am I Supposed to do with this idiot, Give me a text.__")
+           return await ok.edit("__ᴡʜᴀᴛ ᴀᴍ ɪ sᴜᴘᴘᴏsᴇᴅ ᴛᴏ ᴅᴏ ᴡɪᴛʜ ᴛʜɪs ɪᴅɪᴏᴛ, ɢɪᴠᴇ ᴍᴇ ᴀ ᴛᴇxᴛ.__")
     args = args or message.reply_to_message.text
     
     result = ""
@@ -152,9 +152,9 @@ async def cmoji(client: Client, message: Message):
     args = get_text(message)
     if not args:
         if not message.reply_to_message:
-           return await ok.edit("__What am I Supposed to do with this idiot, Give me a text.__")
+           return await ok.edit("__ᴡʜᴀᴛ ᴀᴍ ɪ sᴜᴘᴘᴏsᴇᴅ ᴛᴏ ᴅᴏ ᴡɪᴛʜ ᴛʜɪs ɪᴅɪᴏᴛ, ɢɪᴠᴇ ᴍᴇ ᴀ ᴛᴇxᴛ.__")
         if not message.reply_to_message.text:
-           return await ok.edit("__What am I Supposed to do with this idiot, Give me a text.__")
+           return await ok.edit("__ᴡʜᴀᴛ ᴀᴍ ɪ sᴜᴘᴘᴏsᴇᴅ ᴛᴏ ᴅᴏ ᴡɪᴛʜ ᴛʜɪs ɪᴅɪᴏᴛ, ɢɪᴠᴇ ᴍᴇ ᴀ ᴛᴇxᴛ.__")
     args = args or message.reply_to_message.text
     try:
         emoji, arg = args.split(" ", 1)
