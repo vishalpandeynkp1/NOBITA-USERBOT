@@ -37,20 +37,20 @@ async def alive(client: Client, message: Message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     txt = (
-        f"❥︎• ᴀʟɪᴠᴇ \n\n"
-        f"❥︎• ᴠᴇʀsɪᴏɴ 1.0\n"
-        f"❥︎• ᴘɪɴɢ {ping * 1000:.3f}ᴍs\n"
-        f"❥︎• sᴛᴀʀᴛ ᴛɪᴍᴇ {uptime}\n"
-        f"❥︎• ᴘʏᴛʜᴏɴ {python_version()}`\n"
-        f"❥︎•  {__version__}\n"
-        f"❥︎• {client.me.mention}"    
+        f"❥︎• 𝐀ʟ𝐈ᴠ𝐄 \n\n"
+        f"❥︎• 𝐕ᴇ𝐑s𝐈ᴏ𝐍 2.0\n"
+        f"❥︎• 𝐏ɪ𝐍ɢ {ping * 1000:.3f}𝐌s\n"
+        f"❥︎• 𝐒ᴛ𝐀ʀ𝐓•~•𝐓ɪ𝐌ᴇ {uptime}\n"
+        f"❥︎• 𝐏ʏ𝐓ʜ𝐎ɴ {python_version()}`\n"
+        f"❥︎• 𝐏ʏ𝐑ᴏ𝐆ʀ𝐀ᴍ {__version__}\n"
+        f"❥︎• 𝐃ᴇ𝐕ᴇ𝐋ᴏ𝐏ᴇ𝐑 {client.me.mention}"    
     )
     await message.delete()
     await message.reply_photo(photo=ALIVE_PIC, caption=txt)
 
 @Client.on_message(filters.command(["ping"], ".") & (filters.me | filters.user(SUDO_USER)))
 async def ping(client: Client, message: Message):
-    r = await message.reply_text("**🇵𝐎𝐍𝐆**")
+    r = await message.reply_text("**𝐏ᴏ𝗡ɢ**")
     start = time()
     current_time = datetime.utcnow()
     ping = time() - start
@@ -58,8 +58,8 @@ async def ping(client: Client, message: Message):
     uptime = await _human_time_duration(int(uptime_sec))
     await message.delete()
     await r.edit(
-        f"★ 🇸𝐖𝐀𝐆𝐀𝐓★🇳𝐇𝐈★🇰𝐀𝐑𝐎𝐆𝐄★🇭𝐀𝐌𝐀𝐑𝐀 ★\n\n"
-        f"🇵𝐈𝐍𝐆 ❥︎ {ping * 1000:.3f}ᴍs\n"
-        f"🇺𝐏★🇹𝐈𝐌𝐄 ❥︎ {uptime}\n"
-        f"🇴𝐖𝐍𝐄𝐑 ❥︎ {client.me.mention}"
+        f"★𝐖ᴇ𝐋ᴄ𝐎ᴍ𝐄★𝐊ᴀ𝐑ᴏ★𝐁ᴀ𝐀ᴘ★𝐀ᴀ𝐘ᴀ★𝐓ᴜ𝐌ʜ𝐀ʀ𝐀★\n\n"
+        f"❥︎• 𝐏ɪ𝐍ɢ {ping * 1000:.3f}𝐌s\n"
+        f"❥︎• 𝐒ᴛ𝐀ʀ𝐓•~•𝐓ɪ𝐌ᴇ {uptime}\n"
+        f"❥︎• 𝐃ᴇ𝐕ᴇ𝐋ᴏ𝐏ᴇ𝐑 {client.me.mention}"
     )
