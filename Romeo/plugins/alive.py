@@ -37,13 +37,13 @@ async def alive(client: Client, message: Message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     txt = (
-        f"❥︎ 𝐀𝐋𝐈𝐕𝐄 ☟︎︎︎\n\n"
-        f"🇻𝐄𝐑𝐒𝐈𝐎𝐍 ❥︎ 1.0\n"
-        f"🇵𝐈𝐍𝐆 ❥︎ {ping * 1000:.3f}ᴍs\n"
-        f"🇺𝐏★🇹𝐈𝐌𝐄 ❥︎ {uptime}\n"
-        f"🇵𝐘𝐓𝐇𝐎𝐍 ❥︎ {python_version()}`\n"
-        f"🇵𝐘𝐑𝐎𝐆𝐑𝐀𝐌 ❥︎ {__version__}\n"
-        f"🇴𝐖𝐍𝐄𝐑 ❥︎ {client.me.mention}"    
+        f"❥︎• ᴀʟɪᴠᴇ \n\n"
+        f"❥︎• ᴠᴇʀsɪᴏɴ 1.0\n"
+        f"❥︎• ᴘɪɴɢ {ping * 1000:.3f}ᴍs\n"
+        f"❥︎• sᴛᴀʀᴛ ᴛɪᴍᴇ {uptime}\n"
+        f"❥︎• ᴘʏᴛʜᴏɴ {python_version()}`\n"
+        f"❥︎•  {__version__}\n"
+        f"❥︎• {client.me.mention}"    
     )
     await message.delete()
     await message.reply_photo(photo=ALIVE_PIC, caption=txt)
