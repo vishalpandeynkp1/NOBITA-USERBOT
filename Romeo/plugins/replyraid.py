@@ -8,48 +8,48 @@ ACTIVATE_RLIST = []
 
 @Client.on_message(filters.command(["rr", "replyraid", "raidreply"], ".") & (filters.me | filters.user(SUDO_USER)))
 async def rr(client: Client, message: Message):
-    r = await message.edit_text("**Processing**")
+    r = await message.edit_text("**𝐒ᴀʙᴀʀ 𝐊ᴀʀ 𝐃ᴀʟʟᴇ**")
     reply = message.reply_to_message
     if reply:
         user = reply.from_user.id
     else:
         user = message.text.split(None, 1)[1]
         if not user:
-            await r.edit("**Provide Me A USER_ID or reply to someone**")
+            await r.edit("**USER_ID 𝐃ᴏ 𝐘ᴀ 𝐈sᴋᴏ 𝐑ᴇᴘʟʏ 𝐊ᴀʀᴋᴇ 𝐊ᴀʀᴏ**")
             return
     user = await client.get_users(user)
     if int(message.chat.id) in GROUP:
-        await r.edit("`You Cannot Spam In Developers' Chat`")
+        await r.edit("`𝐒ᴏʀʀʏ 𝐀ᴘ 𝐀ᴘɴᴇ 𝐁ᴀᴀᴘ 𝐏ᴀʀ 𝐒ᴘᴀᴍ 𝐍ʜɪ 𝐊ᴀʀ 𝐒ᴀᴋᴛᴇ`")
         return
     if int(user.id) in VERIFIED_USERS:
-        await r.edit("You Cannot Spam On Developers")
+        await r.edit("𝐒ᴏʀʀʏ 𝐀ᴘ 𝐀ᴘɴᴇ 𝐁ᴀᴀᴘ 𝐏ᴀʀ 𝐒ᴘᴀᴍ 𝐍ʜɪ 𝐊ᴀʀ 𝐒ᴀᴋᴛᴇ")
         return
     elif int(user.id) in SUDO_USER:
-        await r.edit("That Guy Is part of sudo user.")
+        await r.edit("𝐘ᴇ 𝐒ᴀʟᴀ 𝐒ᴜᴅᴏ 𝐑ᴀɴᴅɪ 𝐇ᴀɪ.")
         return
     elif int(user.id) in ACTIVATE_RLIST:
-        await r.edit("User Already in Raidlist.")
+        await r.edit("𝐀ʟʀᴇᴀᴅʏ 𝐑ᴀɪᴅ 𝐒ᴇ 𝐂ʜᴜᴅ 𝐑ᴀʜᴀ 𝐇ᴀɪ 𝐘ᴇ 𝐓ᴏʜ.")
         return
     ACTIVATE_RLIST.append(user.id)
-    await r.edit(f"**Replyraid Activated On {user.first_name} Successfully ✅**")
+    await r.edit(f"**𝐂ʜᴏᴅɴᴇ 𝐊ᴇ 𝐋ɪʏᴇ 𝐑ᴇᴘʟʏʀᴀɪᴅ 𝐋ᴀɢ {user.first_name} 𝐆ʏɪ**")
 
 @Client.on_message(filters.command(["drr", "dreplyraid", "draidreply"], ".") & (filters.me | filters.user(SUDO_USER)))
 async def drr(client: Client, message: Message):
-    r = await message.edit_text("**Processing**")
+    r = await message.edit_text("**𝐒ᴀʙᴀʀ 𝐊ᴀʀ 𝐃ᴀʟʟᴇ**")
     reply = message.reply_to_message
     if reply:
         user = reply.from_user.id
     else:
         user = message.text.split(None, 1)[1]
         if not user:
-            await r.edit("Provide me username/userid or reply to user for deactivating replyraid")
+            await r.edit("ᴜsᴇʀɴᴀᴍᴇ 𝐃ᴏ 𝐘ᴀ 𝐈ᴅ 𝐘ᴀ 𝐑ᴇᴘʟʏ 𝐊ᴀʀᴋᴇ 𝐊ᴀʀᴏ 𝐓ᴀʙʜɪ 𝐑ᴇᴘʟʏʀᴀɪᴅ 𝐎ғғ 𝐇ᴏɢᴀ")
             return
     user = await client.get_users(user)
     if int(user.id) not in ACTIVATE_RLIST:
-        await r.edit("User Not in Replyraid.")
+        await r.edit("𝐈sᴋᴏ 𝐑ᴀɪᴅ 𝐍ʜɪ 𝐋ᴀɢᴀ 𝐇ᴜᴀ.")
         return
     ACTIVATE_RLIST.remove(user.id)
-    await r.edit(f"**Reply Raid has Been Removed {user.first_name}, enjoy!**")
+    await r.edit(f"**𝐉ᴀᴀ 𝐁ᴀᴄʜᴇ 𝐌ᴀғғ 𝐊ɪʏᴀ 𝐇ᴀᴛᴀ 𝐃ɪ 𝐑ᴀɪᴅ {user.first_name}, 𝐋ᴏʟ**")
 
 
 @Client.on_message(filters.incoming)
@@ -78,6 +78,6 @@ async def watch_raids(client: Client, message: Message):
             if message.from_user.id in ACTIVATE_RLIST:
                 await message.reply_text(raid)
         except Exception as a:
-            print(f"An error occurred (a): {str(a)}")
+            print(f"𝐄ʀʀᴏʀ 𝐀ᴀɢʏᴀ (a): {str(a)}")
     except Exception as b:
-        print(f"An error occurred (b): {str(b)}")
+        print(f"𝐄ʀʀᴏʀ 𝐀ᴀɢʏᴀ (b): {str(b)}")
