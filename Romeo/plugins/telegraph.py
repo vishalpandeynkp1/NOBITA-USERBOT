@@ -9,7 +9,7 @@ r = telegraph.create_account(short_name="telegram")
 auth_url = r["auth_url"]
 
 def get_text(message: Message) -> [None, str]:
-    """Extract Text From Commands"""
+    """𝐄xᴛʀᴀᴄᴛ 𝐓ᴇxᴛ 𝐅ʀᴏᴍ 𝐂ᴏᴍᴍᴀɴᴅs"""
     text_to_return = message.text
     if message.text is None:
         return None
@@ -26,7 +26,7 @@ async def uptotelegraph(client: Client, message: Message):
     tex = await message.edit_text("`Processing . . .`")
     if not message.reply_to_message:
         await tex.edit(
-            "**Reply to an Image or text.**"
+            "**𝐁sᴅᴋ 𝐊ɪsɪ 𝐌ᴇᴅɪᴀ 𝐊ᴇ 𝐒ᴀᴛʜ 𝐓ᴀɢ 𝐊ᴀʀ.**"
         )
         return
     if message.reply_to_message.media:
@@ -37,7 +37,7 @@ async def uptotelegraph(client: Client, message: Message):
         try:
             media_url = upload_file(m_d)
         except exceptions.TelegraphException as exc:
-            await tex.edit(f"**ERROR:** `{exc}`")
+            await tex.edit(f"**𝐋ᴇʟᴇ 𝐋ᴀᴜᴅᴀ 𝐄ʀʀᴏʀ 𝐀ᴀɢʏᴀ 𝐀ʙ:** `{exc}`")
             os.remove(m_d)
             return
         U_done = (
