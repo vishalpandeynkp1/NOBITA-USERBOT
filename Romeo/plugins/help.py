@@ -8,52 +8,52 @@ R = "ROMEOBOT COMMAND"
 
 @Client.on_message(filters.command(["help"], ".") & (filters.me | filters.user(SUDO_USER)))
 async def help(client: Client, message: Message):
-    C = "https://telegra.ph//file/5467954d1156db5032062.jpg"
+    C = "https://graph.org/file/0d67f6f9439af27bdb52d.jpg"
     CD = """
-   ROMEOBOT HELP MENU
+   ʟɪʟʏ ᴜsᴇʀʙᴏᴛ ʜᴇʟᴘ ᴍᴇɴᴜ
 ________________________________
-           BOT
-`.alive` - chek bot alive or not
-`.ping` - chek bot ping
-`.restart` - restart the bot
-`.help` - To get commands
+           ʙᴏᴛ
+`.alive` - ᴄʜᴇᴋ ʙᴏᴛ ᴀʟɪᴠᴇ ᴏʀ ɴᴏᴛ
+`.ping` - ᴄʜᴇᴋ ʙᴏᴛ ᴘɪɴɢ
+`.restart` - ʀᴇsᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ
+`.help` - ᴛᴏ ɢᴇᴛ ᴄᴏᴍᴍᴀɴᴅs
 
-           BROADCAST
-`.gcast` [text/reply] - Sending Global Broadcast messages to all groups.
-`.gucast` [text/reply] - Sending Global Broadcast messages to all incoming Private Massages.        
+           ʙʀᴏᴀᴅᴄᴀsᴛ
+`.gcast` [ᴛᴇxᴛ/ʀᴇᴘʟʏ] - sᴇɴᴅɪɴɢ ɢʟᴏʙᴀʟ ʙʀᴏᴀᴅᴄᴀsᴛ ᴍᴇssᴀɢᴇs ᴛᴏ ᴀʟʟ ɢʀᴏᴜᴘs.
+`.gucast` [ᴛᴇxᴛ/ʀᴇᴘʟʏ] - sᴇɴᴅɪɴɢ ɢʟᴏʙᴀʟ ʙʀᴏᴀᴅᴄᴀsᴛ ᴍᴇssᴀɢᴇs ᴛᴏ ᴀʟʟ ɪɴᴄᴏᴍɪɴɢ ᴘʀɪᴠᴀᴛᴇ ᴍᴀssᴀɢᴇs.        
 
-           CLONE
-`.clone` - reply_message for clone I'd
-`.revert` - reply_message to cloner to get back
+           ᴄʟᴏɴᴇ
+`.clone` - ʀᴇᴘʟʏ_ᴍᴇssᴀɢᴇ ғᴏʀ ᴄʟᴏɴᴇ ɪ'ᴅ
+`.revert` - ʀᴇᴘʟʏ_ᴍᴇssᴀɢᴇ ᴛᴏ ᴄʟᴏɴᴇʀ to ɢᴇᴛ ʙᴀᴄᴋ
 
-           EMOJI
-`.emoji` - .emoji (name)
-`.cmoji` - .cmoji (emoji or text) (name)
+           ᴇᴍᴏᴊɪ
+`.emoji` - .ᴇᴍᴏᴊɪ (ɴᴀᴍᴇ)
+`.cmoji` - .ᴄᴍᴏᴊɪ (ᴇᴍᴏᴊɪ or ᴛᴇxᴛ) (ɴᴀᴍᴇ)
 
-           HANG
- `.hang` - .hang (integer)       
+           ʜᴀɴɢ
+ `.hang` - .ʜᴀɴɢ (ɪɴᴛᴇɢᴇʀ)       
 
-           INVITE
- `.invitesall` - .invitesall @groupusername
+           ɪɴᴠɪᴛᴇ
+ `.invitesall` - .ɪɴᴠɪᴛᴇsᴀʟʟ @groupusername
 
-           RAID 
-`.raid` - .raid (count) (username or reply_message)
-`.dmraid` - .dmraid (count) (username or reply_message)
-`.replyraid` - .replyraid (username or reply_message)
-`.lraid` - .lraid (count) (username or reply_message)
-`.dmlraid` - .dmlraid (count) (username or reply_message)
+           ʀᴀɪᴅ 
+`.raid` - .ʀᴀɪᴅ (ᴄᴏᴜɴᴛ) (ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ʀᴇᴘʟʏ_ᴍᴇssᴀɢᴇ)
+`.dmraid` - .ᴅᴍʀᴀɪᴅ (ᴄᴏᴜɴᴛ) (ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ʀᴇᴘʟʏ_ᴍᴇssᴀɢᴇ)
+`.replyraid` - .ʀᴇᴘʟʏʀᴀɪᴅ (ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ʀᴇᴘʟʏ_ᴍᴇssᴀɢᴇ)
+`.lraid` - .ʟʀᴀɪᴅ (ᴄᴏᴜɴᴛ) (ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ʀᴇᴘʟʏ_ᴍᴇssᴀɢᴇ)
+`.dmlraid` - .ᴅᴍʟʀᴀɪᴅ (ᴄᴏᴜɴᴛ) (ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ʀᴇᴘʟʏ_ᴍᴇssᴀɢᴇ)
 
-           SPAM
-`.spam` - .spam (count) (message)
-`.sspam` - .sspam (count) (reply_media)
-`.delayspam` - .delayspam (time in second) (count) (text)
+           sᴘᴀᴍ
+`.spam` - .sᴘᴀᴍ (ᴄᴏᴜɴᴛ) (ᴍᴇssᴀɢᴇ)
+`.sspam` - .ssᴘᴀᴍ (ᴄᴏᴜɴᴛ) (ʀᴇᴘʟʏ_ᴍᴇᴅɪᴀ)
+`.delayspam` - .ᴅᴇʟᴀʏsᴘᴀᴍ (ᴛɪᴍᴇ ɪɴ sᴇᴄᴏɴᴅ) (ᴄᴏᴜɴᴛ) (ᴛᴇxᴛ)
 
-           TAGGER
- `.all` - .all (message) - to start usertagger
-`.cancel` - to stop tagger
+           ᴛᴀɢɢᴇʀ
+ `.all` - .ᴀʟʟ (ᴍᴇssᴀɢᴇ) - ᴛᴏ sᴛᴀʀᴛ ᴜsᴇʀᴛᴀɢɢᴇʀ
+`.cancel` - ᴛᴏ sᴛᴏᴘ ᴛᴀɢɢᴇʀ
 
-            TELEGRAPH
-`.tm` - .tm (reply to any media) - to create teligraph link                
+            ᴛᴇʟᴇɢʀᴀᴘʜ
+`.tm` - .tm (ʀᴇᴘʟʏ ᴛᴏ ᴀɴʏ ᴍᴇᴅɪᴀ) - ᴛᴏ ᴄʀᴇᴀᴛᴇ ᴛᴇʟɪɢʀᴀᴘʜ ʟɪɴᴋ                
 """
     await message.delete()
     await message.reply_photo(photo=C, caption=R)
