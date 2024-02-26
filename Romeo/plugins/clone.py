@@ -5,17 +5,17 @@ from Romeo.helper.basic import edit_or_reply, get_text, get_user
 from Romeo import SUDO_USER
 
 OWNER = os.environ.get("OWNER", None)
-BIO = os.environ.get("BIO", "RomeoBot User")
+BIO = os.environ.get("BIO", "lily User")
 
 
 @Client.on_message(filters.command("clone", ".") & (filters.me | filters.user(SUDO_USER)))
 async def clone(client: Client, message: Message):
     text = get_text(message)
-    op = await message.edit_text("`Cloning`")
+    op = await message.edit_text("`𝐂ʟᴏɴᴇ 𝐇ᴏ 𝐑ᴀʜᴀ`")
     userk = get_user(message, text)[0]
     user_ = await client.get_users(userk)
     if not user_:
-        await op.edit("`Whom i should clone:(`")
+        await op.edit("`𝐖ʜᴏᴍ 𝐈 𝐒ʜᴏᴜʟᴅ 𝐂ʟᴏɴᴇ:(`")
         return
 
     get_bio = await client.get_chat(user_.id)
