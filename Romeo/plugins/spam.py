@@ -8,7 +8,7 @@ from Romeo.helper.data import GROUP
 from config import *
 from Romeo import SUDO_USER 
 
-commands = ["spam", "statspam", "slowspam", "fastspam"]
+commands = ["spam", "startspam", "slowspam", "fastspam"]
 SPAM_COUNT = [0]
 
 
@@ -38,7 +38,7 @@ async def extract_args(message, markdown=True):
 async def delayspam(client: Client, message: Message):
     if message.chat.id in GROUP:
         return await message.reply_text(
-            "**This command is not allowed to be used in this group**"
+            "**𝐒ᴏʀʀʏ 𝐁ᴀʙᴇ 𝐏ᴀʀ 𝐘ᴇ 𝐂ᴍᴅ 𝐘ᴀʜᴀ 𝐍ʜɪ 𝐇ᴏ 𝐒ᴀᴋᴛᴀ ☹️**"
         )
     delayspam = await extract_args(message)
     arr = delayspam.split()
@@ -61,7 +61,7 @@ async def delayspam(client: Client, message: Message):
             break
 
     await client.send_message(
-        LOG_GROUP, "**#DELAYSPAM**\nDelaySpam was executed successfully"
+        LOG_GROUP, "**#𝐃ᴇʟᴀʏ_𝐒ᴘᴀᴍ**\n𝐃ᴇᴀʟᴀʏ_𝐒ᴘᴀᴍ 𝐖ᴀs 𝐄xᴇᴄᴜᴛᴇᴅ 𝐒ᴜᴄᴄᴇssғᴜʟʟʏ"
     )
 
 
@@ -69,12 +69,12 @@ async def delayspam(client: Client, message: Message):
 async def sspam(client: Client, message: Message):
     if message.chat.id in GROUP:
         return await message.reply_text(
-            "**This command is not allowed to be used in this group**"
+            "**𝐒ᴏʀʀʏ 𝐁ᴀʙᴇ 𝐏ᴀʀ 𝐘ᴇ 𝐂ᴍᴅ 𝐘ᴀʜᴀ 𝐍ʜɪ 𝐇ᴏ 𝐒ᴀᴋᴛᴀ ☹️**"
         )
     amount = int(message.command[1])
     text = " ".join(message.command[2:])
 
-    cooldown = {"spam": 0.1, "statspam": 0.1, "slowspam": 0.9, "fastspam": 0}
+    cooldown = {"spam": 0.1, "startspam": 0.1, "slowspam": 0.9, "fastspam": 0}
 
     await message.delete()
 
@@ -95,16 +95,16 @@ async def sspam(client: Client, message: Message):
 async def spam_stick(client: Client, message: Message):
     if message.chat.id in GROUP:
         return await message.reply_text(
-            "**This command is not allowed to be used in this group**"
+            "**𝐒ᴏʀʀʏ 𝐁ᴀʙᴇ 𝐏ᴀʀ 𝐘ᴇ 𝐂ᴍᴅ 𝐘ᴀʜᴀ 𝐍ʜɪ 𝐇ᴏ 𝐒ᴀᴋᴛᴀ ☹️**"
         )
     if not message.reply_to_message:
         await message.reply_text(
-            "**reply to a sticker with amount you want to spam**"
+            "*𝐃ᴀʟʟᴇ 𝐒ᴛɪᴄᴋᴇʀ 𝐓ᴀɢ 𝐊ᴀʀᴋᴇ 𝐂ᴍᴅ 𝐔sᴇ 𝐊ᴀʀ 𝐓ᴀʙ 𝐇ᴏɢᴀ**"
         )
         return
     if not message.reply_to_message.sticker:
         await message.reply_text(
-            "**reply to a sticker with amount you want to spam**"
+            "**𝐃ᴀʟʟᴇ 𝐒ᴛɪᴄᴋᴇʀ 𝐓ᴀɢ 𝐊ᴀʀᴋᴇ 𝐂ᴍᴅ 𝐔𝐬ᴇ 𝐊ᴀʀ 𝐓ᴀʙ 𝐇ᴏɢᴀ**"
         )
         return
     else:
