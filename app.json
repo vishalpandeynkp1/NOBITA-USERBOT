@@ -1,23 +1,24 @@
 {
-    "name": "Romeo-Userbot",
+    "name": "𝗟𝗶𝗹𝘆 𝗨𝘀𝗲𝗿𝗯𝗼𝘁",
     "description": "An first Telegram Userbot with multi Clients for Spamming or Mass.",
+    "logo": "https://graph.org/file/9db83cb6ae0b870c34e49.jpg"
     "keywords": ["pyrogram", "userbot"],
-    "repository": "https://github.com/RRomeo-RJ/Romeo-UserBot",
+    "repository": "https://github.com/Team-CF-Bots/Lily-Userbot",
   "stack": "container",
     "env": {
         "STRING_SESSION": {
-            "description": "fill with the telethon session string from @RJssgBot",
+            "description": "fill with the pyrogram v1 string session",
             "required": true
         },
         "SUDO_USERS": {
             "description": "Fill there your I'd go to @MissRose_bot pm and type /id",
             "required": true,
-            "value": "5368154755"
+            "value": "6812888267"
         },
         "OWNER_ID": {
             "description": "Fill there your I'd go to @MissRose_bot pm and type /id",
             "required": true,
-            "value": "5368154755"
+            "value": "6812888267"
         },
         "BOT_TOKEN": {
             "description": "fill with your bot token get from @BotFather on telegram",
@@ -27,12 +28,12 @@
         "API_ID": {
             "description": "Fill there your API_ID",
             "required": true,
-            "value": ""
+            "value": "12380656"
         },
         "API_HASH": {
             "description": "Fill there your API_HASH",
             "required": true,
-            "value": "" 
+            "value": "d927c13beaaf5110f25c505b7c071273" 
         }
 
     }
