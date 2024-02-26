@@ -7,12 +7,12 @@ from Romeo import SUDO_USER
 
 @Client.on_message(filters.command(["inviteall", "invitesall", "i"], ".") & (filters.me | filters.user(SUDO_USER)))
 async def invite(client: Client, message: Message):
-    r = await message.reply_text("Processing . . .")
+    r = await message.reply_text("𝐒ᴀʙᴀʀ 𝐊ᴀʀ 𝐃ᴀʟʟᴇ . . .")
     text = message.text.split(" ", 1)
     queryy = text[1]
     chat = await client.get_chat(queryy)
     tgchat = message.chat
-    await r.edit_text(f"inviting users from {chat.username}")
+    await r.edit_text(f"𝐈ɴᴠɪᴛɪɴɢ 𝐔sᴇʀs 𝐅ʀᴏᴍ {chat.username}")
     async for member in client.get_chat_members(chat.id):
         user = member.user
         rj = [
