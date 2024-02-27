@@ -4,7 +4,7 @@ from pyrogram.types import Message
 from Romeo import SUDO_USER
 from config import *
 
-R = "ROMEOBOT COMMAND"
+R = "𝐋ɪʟʏ 𝐔sᴇʀʙᴏᴛ 𝐂ᴍᴅs"
 
 @Client.on_message(filters.command(["help"], ".") & (filters.me | filters.user(SUDO_USER)))
 async def help(client: Client, message: Message):
