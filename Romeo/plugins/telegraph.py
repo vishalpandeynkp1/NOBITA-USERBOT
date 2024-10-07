@@ -2,7 +2,7 @@ import os
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from telegraph import Telegraph, exceptions, upload_file
-from Romeo import SUDO_USER
+from nobita import SUDO_USER
 
 telegraph = Telegraph()
 r = telegraph.create_account(short_name="telegram")
