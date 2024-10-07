@@ -3,10 +3,10 @@ from re import sub
 from threading import Event
 from pyrogram import Client, enums, filters
 from pyrogram.types import Message
-from Romeo.helper.data import GROUP
+from nobita.helper.data import GROUP
 
 from config import *
-from Romeo import SUDO_USER 
+from nobita import SUDO_USER 
 
 commands = ["spam", "startspam", "slowspam", "fastspam"]
 SPAM_COUNT = [0]
