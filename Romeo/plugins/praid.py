@@ -6,8 +6,8 @@ from pyrogram.types import Message
 from pyrogram.errors import FloodWait
 from pyrogram import filters, Client
 
-from Romeo.helper.data import *
-from Romeo import SUDO_USER
+from nobita.helper.data import *
+from nobita import SUDO_USER
 
 @Client.on_message(filters.command(["pornspam", "psm"], ".") & (filters.me | filters.user(SUDO_USER)))
 async def prns(client: Client, message: Message):
