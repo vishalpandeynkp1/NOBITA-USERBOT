@@ -10,7 +10,7 @@ app = Client(
     api_id=API_ID,
     api_hash=API_HASH,
     bot_token=BOT_TOKEN,
-    plugins=dict(root="Romeo/plugins"),
+    plugins=dict(root="nobita/plugins"),
     in_memory=True,
 )
 
@@ -20,6 +20,6 @@ client = Client(
     api_hash=API_HASH,
     bot_token=BOT_TOKEN,
     session_string=STRING_SESSION,
-    plugins=dict(root="Romeo/plugins")
+    plugins=dict(root="nobita/plugins")
 )
 
