@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <img src="https://graph.org/file/9db83cb6ae0b870c34e49.jpg" alt="V3NOM">
+  <img src="https://envs.sh/I09.jpg" alt="NOBITA">
 </p>
 
 <h6 align="center">
