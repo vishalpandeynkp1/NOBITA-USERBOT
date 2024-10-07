@@ -1,8 +1,8 @@
 {
-    "name": "𝗟𝗶𝗹𝘆 𝗨𝘀𝗲𝗿𝗯𝗼𝘁",
+    "name": "ɴᴏʙɪᴛᴀ ᴜꜱᴇʀʙᴏᴛ ",
     "description": "An first Telegram Userbot with multi Clients for Spamming or Mass.",
     "keywords": ["pyrogram", "userbot"],
-    "repository": "https://github.com/Team-CF-Bots/Lily-Userbot",
+    "repository": "https://github.com/vishalpandeynkp1/Nobitauserbot",
   "stack": "container",
     "env": {
         "STRING_SESSION": {
@@ -12,12 +12,12 @@
         "SUDO_USERS": {
             "description": "Fill there your I'd go to @MissRose_bot pm and type /id",
             "required": true,
-            "value": "6812888267"
+            "value": "6250825321"
         },
         "OWNER_ID": {
             "description": "Fill there your I'd go to @MissRose_bot pm and type /id",
             "required": true,
-            "value": "6812888267"
+            "value": "6250825321"
         },
         "BOT_TOKEN": {
             "description": "fill with your bot token get from @BotFather on telegram",
