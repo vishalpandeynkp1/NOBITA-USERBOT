@@ -5,16 +5,16 @@ from random import choice
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-from Romeo import SUDO_USER
-from Romeo.helper.data import *
+from nobita import SUDO_USER
+from nobita.helper.data import *
 
 
 @Client.on_message(filters.command(["raid", "r"], ".") & (filters.me | filters.user(SUDO_USER)))
 async def raid(app: Client, m: Message):  
-      Romeo = "".join(m.text.split(maxsplit=1)[1:]).split(" ", 2)
-      if len(Romeo) == 2:
-        counts = int(Romeo[0])
-        username = Romeo[1]
+      nobita = "".join(m.text.split(maxsplit=1)[1:]).split(" ", 2)
+      if len(nobita) == 2:
+        counts = int(nobita[0])
+        username = nobita[1]
         if not counts:
           await m.reply_text(f"𝐑ᴀɪᴅ 𝐋ɪᴍɪᴛ 𝐍ᴏᴛ 𝐅ᴏᴜɴᴅ 𝐏ʟᴇᴀsᴇ 𝐆ɪᴠᴇ 𝐂ᴏᴜɴᴛ!")
           return       
@@ -22,12 +22,12 @@ async def raid(app: Client, m: Message):
           await m.reply_text("𝐘ᴏᴜ 𝐍ᴇᴇᴅ 𝐓ᴏ 𝐒ᴘᴇᴄɪғʏ 𝐀ɴ 𝐔sᴇʀ! 𝐑ᴇᴘʟʏ 𝐓ᴏ 𝐀ɴʏ 𝐔𝐬ᴇʀ 𝐎ʀ 𝐆ɪᴠᴇ 𝐈ᴅ/𝐔𝐬ᴇʀɴᴀᴍᴇ")
           return
         try:
-           user = await app.get_users(Romeo[1])
+           user = await app.get_users(nobita[1])
         except:
            await m.reply_text("**𝐋ᴇʟᴇ 𝐋ᴀᴜᴅᴀ 𝐄ʀʀᴏʀ 𝐀ᴀɢʏᴀ:** 𝐔sᴇʀ 𝐍ᴏᴛ 𝐅ᴏᴜɴᴅ 𝐎ʀ 𝐌ᴀʏ 𝐁ᴇ 𝐃ᴇʟᴇᴛᴇᴅ!")
            return
       elif m.reply_to_message:
-        counts = int(Romeo[0])
+        counts = int(nobita[0])
         try:
            user = await app.get_users(m.reply_to_message.from_user.id)
         except:
@@ -53,10 +53,10 @@ async def raid(app: Client, m: Message):
 
 @Client.on_message(filters.command(["dmraid", "dmr"], ".") & (filters.me | filters.user(SUDO_USER)))
 async def draid(app: Client, m: Message):  
-      Romeo = "".join(m.text.split(maxsplit=1)[1:]).split(" ", 2)
-      if len(Romeo) == 2:
-        counts = int(Romeo[0])
-        username = Romeo[1]
+      nobita = "".join(m.text.split(maxsplit=1)[1:]).split(" ", 2)
+      if len(nobita) == 2:
+        counts = int(nobita[0])
+        username = nobita[1]
         if not counts:
           await m.reply_text(f"𝐑ᴀɪᴅ 𝐋ɪᴍɪᴛ 𝐍ᴏᴛ 𝐅ᴏᴜɴᴅ 𝐏ʟᴇᴀsᴇ 𝐆ɪᴠᴇ 𝐂ᴏᴜɴᴛ!")
           return       
@@ -64,12 +64,12 @@ async def draid(app: Client, m: Message):
           await m.reply_text("𝐘ᴏᴜ 𝐍ᴇᴇᴅ 𝐓ᴏ 𝐒ᴘᴇᴄɪғʏ 𝐀ɴ 𝐔sᴇʀ! 𝐑ᴇᴘʟʏ 𝐓ᴏ 𝐀ɴʏ 𝐔sᴇʀ 𝐎ʀ 𝐆ɪᴠᴇ 𝐈ᴅ/𝐔sᴇʀɴᴀᴍᴇ")
           return
         try:
-           user = await app.get_users(Romeo[1])
+           user = await app.get_users(nobita[1])
         except:
            await m.reply_text("**𝐋ᴇʟᴇ 𝐋ᴀᴜᴅᴀ 𝐀ᴀɢʏᴀ 𝐄ʀʀᴏʀ:** 𝐔sᴇʀ 𝐍ᴏᴛ 𝐅ᴏᴜɴᴅ 𝐎ʀ 𝐌ᴀʏ 𝐁ᴇ 𝐃ᴇʟᴇᴛᴇᴅ!")
            return
       elif m.reply_to_message:
-        counts = int(Romeo[0])
+        counts = int(nobita[0])
         try:
            user = await app.get_users(m.reply_to_message.from_user.id)
         except:
