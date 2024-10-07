@@ -1,16 +1,16 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-from Romeo import SUDO_USER
+from nobita import SUDO_USER
 from config import *
 
-R = "𝐋ɪʟʏ 𝐔sᴇʀʙᴏᴛ 𝐂ᴍᴅs"
+R = "ɴᴏʙɪᴛᴀ ᴜꜱᴇʀʙᴏᴛ ᴄᴍᴅꜱ"
 
 @Client.on_message(filters.command(["help"], ".") & (filters.me | filters.user(SUDO_USER)))
 async def help(client: Client, message: Message):
-    C = "https://graph.org/file/0d67f6f9439af27bdb52d.jpg"
+    C = "https://envs.sh/I08.jpg"
     CD = """
-   ʟɪʟʏ ᴜsᴇʀʙᴏᴛ ʜᴇʟᴘ ᴍᴇɴᴜ
+   NOBITA USERBOT HELP MENU
 ________________________________
            ʙᴏᴛ
 `.alive` - ᴄʜᴇᴋ ʙᴏᴛ ᴀʟɪᴠᴇ ᴏʀ ɴᴏᴛ
