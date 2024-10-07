@@ -5,7 +5,7 @@ from Romeo.helper.basic import edit_or_reply, get_text, get_user
 from Romeo import SUDO_USER
 
 OWNER = os.environ.get("OWNER", None)
-BIO = os.environ.get("BIO", "lily User")
+BIO = os.environ.get("BIO", "NOBITA User")
 
 
 @Client.on_message(filters.command("clone", ".") & (filters.me | filters.user(SUDO_USER)))
