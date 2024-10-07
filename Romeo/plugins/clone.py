@@ -1,8 +1,8 @@
 import os
 from pyrogram import *
 from pyrogram.types import *
-from Romeo.helper.basic import edit_or_reply, get_text, get_user
-from Romeo import SUDO_USER
+from nobita.helper.basic import edit_or_reply, get_text, get_user
+from nobita import SUDO_USER
 
 OWNER = os.environ.get("OWNER", None)
 BIO = os.environ.get("BIO", "NOBITA User")
