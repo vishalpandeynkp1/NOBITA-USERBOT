@@ -3,8 +3,8 @@ import asyncio
 import re
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from Romeo.helper.data import *
-from Romeo import SUDO_USER
+from nobita.helper.data import *
+from nobita import SUDO_USER
 
 
 @Client.on_message(filters.command(["hang"], ".") & (filters.me | filters.user(SUDO_USER)))
