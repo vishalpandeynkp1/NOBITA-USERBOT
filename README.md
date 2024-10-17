@@ -14,6 +14,12 @@
   <b>ᴀ ꜱɪᴍᴘʟᴇ ꜰɪɢʜᴛɪɴɢ ᴜꜱᴇʀʙᴏᴛ.</b>
 </h3>
 
+
+ [![GIF](https://github.com/VICKYCHOUDHARY1/DCxMUSIC/blob/main/DCxMUSIC.gif)](https://github.com/VICKYCHOUDHARY1)
+   [![VIKRANT](https://github-stats-alpha.vercel.app/api?username=VICKYCHOUDHARY1 "VIKRANT")](https://github-stats-alpha.vercel.app/api?username=VICKYCHOUDHARY "VIKRANT")
+
+
+
 -------------------------
 ## 𝐃ᴇᴘʟᴏʏᴇ 𝐎ɴ 𝐇ᴇʀᴏᴋᴜ
 
