@@ -15,8 +15,8 @@
 </h3>
 
 
- [![GIF](https://github.com/VICKYCHOUDHARY1/DCxMUSIC/blob/main/DCxMUSIC.gif)](https://github.com/VICKYCHOUDHARY1)
-   [![VIKRANT](https://github-stats-alpha.vercel.app/api?username=VICKYCHOUDHARY1 "VIKRANT")](https://github-stats-alpha.vercel.app/api?username=VICKYCHOUDHARY "VIKRANT")
+ [![GIF](https://github.com/vishalpandeynkp1/VIPNOBITAMUSIC_REPO/blob/main/VIPNOBITAMUSIC.gif)](https://github.com/vishalpandeynkp1)
+   [![NOBITA](https://github-stats-alpha.vercel.app/api?username=vishalpandeynkp1 "NOBITA")](https://github-stats-alpha.vercel.app/api?username=vishalpandeynkp1 "NOBITA")
 
 
 
